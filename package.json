@@ -1,0 +1,24 @@
+{
+  "name": "hidden-machine-example-http",
+  "version": "0.0.1",
+  "description": "A simple example demonstrating a hidden machine that is a http server",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd dist && node-gyp-build",
+    "prepublish": "hidden-machine lib/index.js -o dist/",
+    "test": ":"
+  },
+  "keywords": [
+    "hidden",
+    "machine",
+    "http",
+    "server",
+    "example"
+  ],
+  "author": "Joseph Werle <joseph.werle@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "hidden-machine": "^0.1.3",
+    "node-gyp-build": "^3.8.0"
+  }
+}
