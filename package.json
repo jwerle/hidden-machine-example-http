@@ -4,8 +4,8 @@
   "description": "A simple example demonstrating a hidden machine that is a http server",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cd dist && node-gyp-build",
-    "prepublish": "hidden-machine lib/index.js -o dist/ --key=cb1cd65e7e3e84cf7b7c5c6dd930da109d02c3c45f167d2cfe22a3b8df4fbef1",
+    "install": "if test -f binding.gyp; then node-gyp-build; fi",
+    "prepublish": "hidden-machine ./lib/index.js -o . --key=cb1cd65e7e3e84cf7b7c5c6dd930da109d02c3c45f167d2cfe22a3b8df4fbef1",
     "test": ":"
   },
   "keywords": [
