@@ -1,6 +1,6 @@
 {
   "name": "hidden-machine-example-http",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple example demonstrating a hidden machine that is a http server",
   "main": "index.js",
   "scripts": {
